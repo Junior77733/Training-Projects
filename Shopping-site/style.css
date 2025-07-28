@@ -1,0 +1,299 @@
+body{
+    background-color:aliceblue;
+    margin:0;
+}
+
+.Logo-Bar{
+    display:flex;
+    flex-direction:row;
+}
+
+.Icon{
+    background-color:aliceblue;
+    width:170px;
+    height:70px;
+    min-width:130px;
+    text-align:center;
+    padding-top:15px;
+}
+
+.Logo-Text{
+    font-size:30px;
+    font-family:Sixtyfour;
+}
+
+.Menu{
+    width:70px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:aliceblue;
+}
+
+.menu-png{
+    height:23px;
+}
+
+.Search-Bar{
+    background-color:lightblue;
+    display:flex;
+    flex:1;
+    background:
+	linear-gradient(135deg, lightblue 10%,
+	transparent 100%) -20px 0,
+
+	linear-gradient(225deg, black 10%,
+	transparent 100%) -20px 0,
+
+	linear-gradient(315deg, pink, 10%,
+	transparent 100%),
+
+	linear-gradient(45deg, green 10%,
+	transparent 100%);
+	
+	background-size: 5px 5px;
+	background-position:0px 10px;
+}
+
+.Typing-Space{
+    width:550px;
+    height:30px;
+    margin-left:45px;
+    align-self:center;
+}
+
+.click-search{
+    margin-left:5px;
+    width:90px;
+    height:40px;
+    align-self:center;
+    background-color:rgb(46,164,79);
+    color:white;
+    border-width:3px;
+    border-style:solid;
+    border-radius:5px;
+    border-color:rgb(229, 229, 229);
+    cursor:pointer;
+    font-weight:bold;
+    font-size:13px;
+}
+
+.click-search:hover{
+    background-color: rgb(48, 181, 86);
+}
+
+.click-search:active{
+    background-color:rgb(229, 229, 229);
+    color:rgb(46,164,79);
+}
+
+.Profile-icons{
+    background-color:aliceblue;
+    width:200px;
+    display:flex;
+
+}
+
+.Other-icons{
+    width:100px;
+    display:flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-png{
+    width:23px;
+    height:23px;
+}
+
+.dollar-png{
+    width:23px;
+    height:23px;
+}
+
+.noti-png{
+    width:23px;
+    height:23px;
+}
+
+.profile-png{
+    width:23px;
+    height:23px;
+}
+
+.Tabs{
+    display:flex;
+    flex-direction:row;
+    margin-top:1px;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+}
+
+.Tab-Options{
+    background-color:black;
+    flex:1;
+    padding-top:2px;
+    padding-right:2px;
+    padding-bottom:2px;
+    padding-left:2px;
+    color:white;
+    text-align:center;
+    font-family:Arial;
+    font-weight:bold;
+    transition:color 0.2s;
+    cursor:pointer;
+}
+
+.Tab-Options:hover{
+    color:lightblue;
+}
+
+.ItemContainers{
+    display:flex;
+    flex-direction:row;
+    margin-top:15px;
+    gap:5px;
+}
+
+.Item-Slots{
+    width:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    padding: 1rem;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 96rem; /*controls the size of banner-container*/
+    margin: 0 auto;
+}
+
+.slider{
+    display:flex;
+    aspect-ratio:16/4;
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    /*[x-offset, y-offset, blur, spread, color]*/
+    border-radius: 12px;
+}
+
+.slider img{
+    flex: 1 0 100%; /*[flex-grow, flex-shrink, flex-basis]*/
+    scroll-snap-align: start; /*complete slider snap effect*/
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1; /*controls the opacity for when you hover over the 3 dots during
+                navigation*/
+}
+
+.Ad-Banner{
+    display:flex;flex-direction:row;margin-top:15px;margin-left:14px;margin-right:14px;
+    margin-bottom:15px;
+    height:300px;
+    gap:5px;
+    justify-content:space-around;
+}
+
+.Ad-Slots{
+    display:flex;
+    background-color:rgb(226, 233, 239);
+    flex:1;
+    border-width:1px;
+    border-style:solid;
+    border-color:grey;
+    border-radius:7px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    justify-content: center;
+    align-items:center;
+}
+
+.Banner-slot{
+    width:150px;
+    height:150px;
+    border-radius:60px;
+    padding: 1px 1px 1px 1px;
+    background-color:white;
+    justify-content: center;
+    transition: width 0.2s, height 0.2s;
+    cursor:pointer;
+}
+
+
+.Category-header{
+    margin-left:14px;
+    font-family: Market Sans, Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    --font-line-height-250: 1.4286;
+    --font-line-height-default: 1.4286;
+}
+
+.text-box{
+    position:absolute;
+    margin-top:250px;
+    font-size:22px;
+    font-family:Arial;
+    font-weight:bold;
+    padding: 2px 2px 2px 2px;
+    cursor: pointer;
+}
+
+.Banner-slot:hover{
+    width:200px;
+    height:200px;
+}
+
+.end-box{
+    margin-top:100px;
+    background-color: rgb(226, 233, 239);
+    display:flex;
+    flex:1;
+    height:300px;
+}
+
+.buy-tab{
+    padding:10px;
+    padding-top:15px;
+    margin-top:10px;
+    border-right-color:rgb(000,000,000,.25);
+    border-right-style:solid;
+    border-right-width:1px;
+}
+
+.bottom-elements{
+    padding:3px 3px 3px 3px;
+    margin:10px;
+    margin-right:100px;
+    font-family:Market Sans, Helvetica, sans-serif;
+    font-size:12px;
+}
